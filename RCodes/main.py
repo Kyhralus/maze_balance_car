@@ -25,7 +25,6 @@ devices = uart.list_devices()
 serial = uart.UART(devices[0], 115200)
 
 task_state = 0
-loop_num = 0
 while not app.need_exit():
     t = time.ticks_ms()
     img_raw = cam.read()
